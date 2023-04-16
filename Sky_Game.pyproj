@@ -1,0 +1,66 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>0d569cf0-8a9f-4af9-8149-766b02c94fa4</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Sky_Game</Name>
+    <RootNamespace>Sky_Game</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterPath>C:\ProgramData\Anaconda3\python.exe</InterpreterPath>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <Environment>C:\ProgramData\Anaconda3\python.exe</Environment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="main.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\enemy.png" />
+    <Content Include="assets\explosion.wav" />
+    <Content Include="assets\gameMusic.mp3" />
+    <Content Include="assets\coin_drop.wav" />
+    <Content Include="assets\winningMusic.mp3" />
+    <Content Include="assets\cloud.png" />
+    <Content Include="assets\diamondBlue.png" />
+    <Content Include="assets\diamondRed.png" />
+    <Content Include="assets\diamondPurple.png" />
+    <Content Include="assets\diamond.png" />
+    <Content Include="assets\nitro.png" />
+    <Content Include="assets\pause.png" />
+    <Content Include="assets\play.png" />
+    <Content Include="assets\player_jump.png" />
+    <Content Include="assets\rep.png" />
+    <Content Include="assets\sky1.png" />
+    <Content Include="assets\coin.png" />
+    <Content Include="assets\x.png" />
+    <Content Include="atwriter.ttf" />
+    <Content Include="harry.TTF" />
+    <Content Include="THEBOLDFONT.ttf" />
+    <Content Include="tommy.ttf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
